@@ -344,3 +344,10 @@ form input[type="submit"] {
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (max-width:380px){
+    #btn-success{
+        font-size: 14px;
+        padding: 20px 10px;
+    }
+}
