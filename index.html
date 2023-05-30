@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom css design include -->
+    <link rel="stylesheet" href="design-layout\main.css" type="text/css">
+    <!-- bootstrap5 link include -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- bootstrap icon include -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- fontawesome cdn include -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- aos css animation transition -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- browser tab icon -->
+    <link rel="icon" href="nav-img\github.png">
+    <title>SLEC-SITE | HOME</title>
+</head>
+<body>
+    <div class="navbar navbar-expand-md fixed-top fixed">
+        <div class="container">
+            <a href="#" class="navbar-brand">SLEC.</a>
+            <div class="collapse navbar-collapse justify-content-center justify-content-md-center" id="navLinks">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a href="#home" class="nav-link" id="link-css">home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="link-css">Github</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="link-css">Project</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="link-css">Portfolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="link-css">Contact</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center justify-content-center gap-3">
+                <a href="#" class="nav-link"><i class="bi bi-arrow-clockwise" id="refreshPage"></i></a>
+            </div>
+            <button type="button" class="navbar-toggler align-self-end" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div id="margin" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-5 pt-lg-0 order-2 order-lg-1">
+                    <h4 class="__main__" data-aos="fade-right">slec - tools for website scraping</h4>
+                    <p class="text-fixed-color" id="scr" data-aos="fade-right">Git Scraping , Json parse & Mores</p>
+                    <p class="text-fixed-color" data-aos="fade-right">The SLEC site can utilize web scraping techniques to extract information from various websites, including GitHub, and parse JSON files to gather relevant data.</p>
+                    <div class="col-md-12" id="flex">
+                        <span class="min" data-aos="flip-left"></span><button type="button" class="btn btn-success mx-4" title="complete documenation from github" data-aos="flip-left">Read From Github</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="layout-img\img-1.png" alt="hacker-img" class="img-fluid" data-aos="fade-left">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-4 container">
+        <h4 class="main-h4" data-aos="zoom-in">slec feature's</h4>
+        <div class="container-custom pt-4 pt-lg-4">
+            <div class="row align-items-center g-4">
+                <div class="col-md-3">
+                    <div class="box-shadow" data-aos="fade-left">
+                        <i class="bi bi-github git" id="git"></i>
+                        <p class="mt-3 text-fixed">You can scrape GitHub using the SLEC website to retrieve code from repositories.
+                        </p>
+                        <span class="plus"><i class="bi bi-plus-lg"></i></span><span class="text-span mx-3" data-bs-toggle="modal" data-bs-target="#modaltarget">Read mores</span>
+                        <div class="modal fade" id="modaltarget" tabindex="-1" aria-labelledby="modaltarget" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-fixed">You can scrape GitHub using the SLEC website to retrieve code from repositories. This online scraping service is completely free to use. After scraping data from GitHub, you can extract user information from the
+                                            server.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-shadow" data-aos="fade-right">
+                        <i class="bi bi-filetype-json git"></i>
+                        <p class="mt-3 text-fixed">If a website is formatted in JSON, you can any websites parse JSON file.
+                        </p>
+                        <span class="plus"><i class="bi bi-plus-lg"></i></span><span class="text-span mx-3" data-bs-toggle="modal" data-bs-target="#modalfixed">Read mores</span>
+                        <div class="modal fade" id="modalfixed" tabindex="-1" aria-labelledby="modaltarget" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-fixed">If a website is formatted in JSON, you can any websites parse JSON file. Once the website has been scraped, developers can create custom tools using programming languages like Python and run them from the terminal.
+                                            The SLEC website is a free resource that can be used to scrape any website that utilizes JSON formatting.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-shadow" data-aos="fade-left">
+                        <i class="bi bi-terminal git"></i>
+                        <p class="mt-3 text-fixed">Create tools for terminal execution after scraping and parsing JSON format.
+                        </p>
+                        <span class="plus"><i class="bi bi-plus-lg"></i></span><span class="text-span mx-3" data-bs-toggle="modal" data-bs-target="#modalmain">Read mores</span>
+                        <div class="modal fade" id="modalmain" tabindex="-1" aria-labelledby="modalmain" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-fixed">After scraping and parsing a website's JSON format, developers can create tools that can be executed from the terminal using programming languages like Python. The SLEC website provides an easy-to-use platform for
+                                            web scraping and parsing JSON data, allowing for streamlined development of custom projects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-shadow" data-aos="fade-right">
+                        <i class="bi bi-file git"></i>
+                        <p class="mt-3 text-fixed">SLEC can assist you in encrypting and decrypting any text with ease.
+                        </p>
+                        <span class="plus"><i class="bi bi-plus-lg"></i></span><span class="text-span mx-3" data-bs-toggle="modal" data-bs-target="#modalbox">Read mores</span>
+                        <div class="modal fade" id="modalbox" tabindex="-1" aria-labelledby="modalbox" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-fixed">Along with web scraping and parsing JSON data, the SLEC website also offers encryption and decryption capabilities for any given text. Users can encrypt text using various encryption algorithms available on the
+                                            website.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-4 container">
+        <h4 class="main-h4" data-aos="zoom-in">Scraping Tools</h4>
+        <div class="container-custom pt-4 pt-lg-4">
+            <p class="text-fixed-color" data-aos="fade-right">You can use a web scraper to extract data from websites, including GitHub, and parse websites that provide data in JSON format. However, keep in mind that some websites may require an API key for accessing their data. I understand that you
+                have two options: scraping a website and copying its content. It's important to note that the website you mentioned is completely free to use.</p>
+        </div>
+        <div class="container-custom pt-4 pt-lg-4">
+            <div class="row align-items-center g-4 d-flex justify-content-center">
+                <div class="col-md-4">
+                    <div class="box-shadow" data-aos="fade-left">
+                        <h4 class="main-h">Git Scraping / <span class="features">Features</span></h4>
+                        <div class="list-todo">
+                            <ul class="list-features">
+                                <li><i class="bi bi-check2-circle"></i>Git name</li>
+                                <li><i class="bi bi-check2-circle"></i>Git bio</li>
+                                <li><i class="bi bi-check2-circle"></i>Git url</li>
+                                <li><i class="bi bi-check2-circle"></i>Git followers</li>
+                                <li><i class="bi bi-check2-circle"></i>Git following</li>
+                                <li><i class="bi bi-check2-circle"></i>Git total forks</li>
+                                <li><i class="bi bi-check2-circle"></i>Git total repos</li>
+                                <li><i class="bi bi-check2-circle"></i>Git creation date</li>
+                                <li><i class="bi bi-check2-circle"></i>Git updated at</li>
+                            </ul>
+                        </div>
+                        <div class="main-btn-center">
+                            <button type="button" class="btn btn-success" title="get github data" data-bs-toggle="modal" data-bs-target="#maincode">Get Started</button>
+                            <div class="modal fade" id="maincode" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row align-items-center g-3">
+                                                <div class="col-md-6">
+                                                    <input type="text" name="text" id="text" placeholder="Enter Github Username" class="form-control">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button type="button" class="btn btn-success" title="enter submit to get scraping" onclick="Gitdata();">Scrape Now</button>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3">
+                                                <div id="script-display"></div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <i class="bi bi-clipboard" title="copy to clipboard" onclick="copyanother();"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-shadow" data-aos="fade-right">
+                        <h4 class="main-h">Web Json / <span class="features">Features</span></h4>
+                        <div class="list-todo">
+                            <ul class="list-features">
+                                <li><i class="bi bi-check2-circle"></i>Json format</li>
+                                <li><i class="bi bi-check2-circle"></i>Support any websites</li>
+                                <li><i class="bi bi-check2-circle"></i>Support api url</li>
+                                <li><i class="bi bi-check2-circle"></i>Fast scraping</li>
+                                <li><i class="bi bi-check2-circle"></i>Available all countries</li>
+                                <!-- not found like this list -->
+                                <del>
+                                    <li id="not-found"><i class="bi bi-check2-circle" id="list-error"></i>Git following
+                                    </li>
+                                </del>
+                                <del>
+                                    <li id="not-found"><i class="bi bi-check2-circle" id="list-error"></i>Api to
+                                        scraping</li>
+                                </del>
+                                <del>
+                                    <li id="not-found"><i class="bi bi-check2-circle" id="list-error"></i>json convert
+                                        to txt</li>
+                                </del>
+                                <del>
+                                    <li id="not-found"><i class="bi bi-check2-circle" id="list-error"></i>Download Json
+                                        file</li>
+                                </del>
+                            </ul>
+                        </div>
+                        <div class="main-btn-center">
+                            <button type="button" class="btn btn-success" title="get github data" data-bs-toggle="modal" data-bs-target="#usercode">Get Started</button>
+                            <div class="modal fade" id="usercode" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row align-items-center g-3">
+                                                <div class="col-md-6">
+                                                    <input type="text" name="web" id="url-web" placeholder="Enter api website url" class="form-control">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button type="button" class="btn btn-success" title="enter submit to get scraping" id="div-btn">Scrape
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3">
+                                                <div id="script-show"></div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <i class="bi bi-clipboard" title="copy to clipboard" onclick="copyClipboard();"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-4 container">
+        <h4 class="main-h4" data-aos="zoom-in">Useful Websites</h4>
+        <div class="container-custom pt-4 pt-lg-4">
+            <p class="text-fixed-color" data-aos="fade-left">Here is a box where you can find my GitHub project, and all the source code is available on GitHub. On the SLEC website, the owner has a portfolio where you can check all my details.</p>
+        </div>
+        <div class="container-custom pt-4 pt-lg-4">
+            <div class="row align-items-center justify-content-center g-3">
+                <div class="col-md-3">
+                    <div class="box-shadow" data-aos="flip-right">
+                        <i class="bi bi-github git" id="git"></i>
+                        <p class="mt-3 text-fixed">Click on the button to access my GitHub projects.</p>
+                        <div class="mt-3">
+                            <a href="github-web\index.html" target="_blank"><button type="button" class="btn btn-success">Visit site</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-shadow" data-aos="flip-right">
+                        <i class="fa-solid fa-diagram-project" id="font-awesome"></i>
+                        <p class="mt-3 text-fixed">Click on the button to access my Projects</p>
+                        <div class="mt-3">
+                            <a href="https://github.com/Technical-Abm" target="_blank"><button type="button" class="btn btn-success">Visit site</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-shadow" data-aos="flip-left">
+                        <i class="fa-solid fa-file" id="font-awesome"></i>
+                        <p class="mt-3 text-fixed">Click on the button to check my Portfolio</p>
+                        <div class="mt-3">
+                            <a href="https://abmportfolioweb.000webhostapp.com/html-index/index.html" target="_blank"><button type="button" class="btn btn-success">Visit site</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4 class="footer-h4" data-aos="zoom-in">Api Web Links</h4>
+                    <ul class="link-footerslist">
+                        <li data-aos="zoom-in-right"><i class="bi bi-arrow-right"></i>
+                            <a href="#">Github Api</a>
+                        </li>
+                        <li data-aos="zoom-in-right"><i class="bi bi-arrow-right"></i>
+                            <a href="#">Postman Api</a>
+                        </li>
+                        <li data-aos="zoom-in-right"><i class="bi bi-arrow-right"></i>
+                            <a href="#">Json Parse</a>
+                        </li>
+                        <li data-aos="zoom-in-right"><i class="bi bi-arrow-right"></i>
+                            <a href="#">Web Parse</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4 class="footer-h4" data-aos="zoom-in">SLEC Links</h4>
+                    <ul class="link-footerslist">
+                        <li data-aos="zoom-in-right"><i class="bi bi-arrow-right"></i>
+                            <a href="#">Home</a>
+                        </li>
+                        <li data-aos="zoom-in-right"><i class="bi bi-arrow-right"></i>
+                            <a href="#">Github</a>
+                        </li>
+                        <li data-aos="zoom-in-right"><i class="bi bi-arrow-right"></i>
+                            <a href="#">Projects</a>
+                        </li>
+                        <li data-aos="zoom-in-right"><i class="bi bi-arrow-right"></i>
+                            <a href="#">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-links">
+                    <h4 class="footer-h4" data-aos="zoom-in">Contact us!</h4>
+                    <p class="lorem-footer" data-aos="zoom-in">Follow us on these social media platforms</p>
+                    <ul class="link-footerslist d-flex flex-row">
+                        <li data-aos="zoom-in-right"><i class="bi bi-facebook"></i></li>
+                        <li data-aos="zoom-in-right"><i class="bi bi-instagram"></i></li>
+                        <li data-aos="zoom-in-right"><i class="bi bi-twitter"></i></li>
+                        <li data-aos="zoom-in-right"><i class="bi bi-linkedin"></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-links">
+                    <h4 class="footer-h4" data-aos="zoom-in">Our Newsletter</h4>
+                    <p class="lorem-footer" data-aos="zoom-in">Enter email to subscribe our Newsletter</p>
+                    <form action="#" method="#">
+                        <input type="email" data-aos="zoom-in-right" name="email" id="email" class="form-control" placeholder="Email">
+                        <input type="submit" data-aos="zoom-in-right" name="sub" id="sub" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-4">
+        <div class="hr"></div>
+        <div class="container">
+            <div class="copyright-server"></div>
+            <p class="server" data-aos="zoom-in-right">&copy; Copyright <strong>SLEC</strong> All Rights Reserved</p>
+            <p class="made" data-aos="zoom-in-right">Made & Designed By <span class="under" id="link-web">Technical Abm</span></p>
+        </div>
+    </div>
+    <!-- bootstrap5 javascript script include -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos javascript animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- javascript include -->
+    <script src="/app-javascript/app.js" type="text/javascript"></script>
+    <!-- aos javascript include -->
+    <script src="app-javascript\app.js" type="text/javascript"></script>
+    <!-- typed javascript library -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</body>
+</html>

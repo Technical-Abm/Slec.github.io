@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap5 link include -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- bootstrap icon include -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!-- custom css design -->
+    <link rel="stylesheet" href="github-web\git-css\design.css" type="text/css" />
+    <!-- fontawesome cdn include -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- any browser tab github icon -->
+    <link rel="icon" href="nav-img\github.png" />
+    <title>Github | Home</title>
+</head>
+<body>
+    <div class="navbar navbar-expand-md navbar-light fixed-top fixed">
+        <div class="container">
+            <a href="/index.html" class="navbar-brand">Github</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" id="link-css">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="link-css">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="link-css">Resource</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="link-css">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="margin" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-5 pt-lg-0 order-2 order-lg-1">
+                    <h4 class="__main__">Github | Project Store</h4>
+                    <p class="text-fixed-color" id="scr">Github Linux Command Store</p>
+                    <p class="text-fixed-small">
+                        GitHub is a platform that serves as a repository for various projects. On this website, you can discover a wide range of projects. Among them, you will find projects specifically designed for use on Termux or Linux, which are utilized for GitHub scraping,
+                        IP information retrieval, and web header extraction.
+                    </p>
+                    <div class="col-md-12" id="flex">
+                        <span class="min"></span><button type="button" class="btn btn-success mx-4" title="complete documenation from github" data-aos="flip-left">
+                            <span class="arrows mx-1"><i class="bi bi-arrow-up-circle"></i></span> Github site
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="github-web\vectors\vector-one.png" alt="vector-one" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-4 container">
+        <h4 class="main-h4">Projects info</h4>
+        <div class="container-custom pt-4 pt-lg-4">
+            <p id="main-text-js">In my GitHub repository, I have three commands that you can run on Termux or Linux. You can utilize the source code from my repository for these three projects. I hope you find these commands beneficial.
+            </p>
+        </div>
+        <div class="container-custom pt-4 pt-lg-4">
+            <div class="row align-items-center g-4 d-flex justify-content-center">
+                <div class="col-md-4">
+                    <div class="box-shadow">
+                        <h4 class="heading">Github Scraping</h4>
+                        <div class="mt-4">
+                            <div class="cmd-center">
+                                <ul class="git-cmd" id="list-copy">
+                                    <li>pkg update</li>
+                                    <li>pkg upgrade -y</li>
+                                    <li>pkg install git -y</li>
+                                    <li>pkg install python -y</li>
+                                    <li>git clone https://github.com/Technical-Abm/Github-scraping</li>
+                                    <li>cd Github-scraping</li>
+                                    <li>python --version</li>
+                                    <li>python scraping.py</li>
+                                </ul>
+                            </div>
+                            <div class="btn">
+                                <button type="button" class="btn btn-success" title="click to copy command" onclick="copyText();"><i class="bi bi-clipboard"></i> Copy-Clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-shadow">
+                        <h4 class="heading">Ip-Info</h4>
+                        <div class="mt-4">
+                            <div class="cmd-center">
+                                <ul class="git-cmd" id="list-copy-2">
+                                    <li>pkg update</li>
+                                    <li>pkg upgrade -y</li>
+                                    <li>pkg install git -y</li>
+                                    <li>pkg install python -y</li>
+                                    <li>git clone https://github.com/Technical-Abm/ip-info</li>
+                                    <li>cd ip-info</li>
+                                    <li>python --version</li>
+                                    <li>python ipinfo.py</li>
+                                </ul>
+                            </div>
+                            <div class="btn">
+                                <button type="button" class="btn btn-success" title="click to copy command" onclick="ipCopy();"><i class="bi bi-clipboard"></i> Copy-Clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-shadow">
+                        <h4 class="heading">Encode</h4>
+                        <div class="mt-4">
+                            <div class="cmd-center">
+                                <ul class="git-cmd" id="list-copy-3">
+                                    <li>pkg update</li>
+                                    <li>pkg upgrade -y</li>
+                                    <li>pkg install git -y</li>
+                                    <li>pkg install python -y</li>
+                                    <li>git clone https://github.com/Technical-Abm/enc</li>
+                                    <li>cd enc</li>
+                                    <li>python --version</li>
+                                    <li>python encode.py</li>
+                                </ul>
+                            </div>
+                            <div class="btn">
+                                <button type="button" class="btn btn-success" title="click to copy command" onclick="encode();"><i class="bi bi-clipboard"></i> Copy-Clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4 class="footer-h4">Api Web Links</h4>
+                    <ul class="link-footerslist">
+                        <li><i class="bi bi-arrow-right"></i>
+                            <a href="#">Github Api</a>
+                        </li>
+                        <li><i class="bi bi-arrow-right"></i>
+                            <a href="#">Postman Api</a>
+                        </li>
+                        <li><i class="bi bi-arrow-right"></i>
+                            <a href="#">Json Parse</a>
+                        </li>
+                        <li><i class="bi bi-arrow-right"></i>
+                            <a href="#">Web Parse</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4 class="footer-h4">SLEC Links</h4>
+                    <ul class="link-footerslist">
+                        <li><i class="bi bi-arrow-right "></i>
+                            <a href="# ">Home</a>
+                        </li>
+                        <li><i class="bi bi-arrow-right"></i>
+                            <a href="#">Projects</a>
+                        </li>
+                        <li><i class="bi bi-arrow-right "></i>
+                            <a href="# ">Github</a>
+                        </li>
+                        <li><i class="bi bi-arrow-right "></i>
+                            <a href="# ">Resource</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-links ">
+                    <h4 class="footer-h4 ">Contact us!</h4>
+                    <p class="lorem-footer ">Follow us on these social media platforms</p>
+                    <ul class="link-footerslist d-flex flex-row ">
+                        <li><i class="bi bi-facebook "></i></li>
+                        <li><i class="bi bi-instagram "></i></li>
+                        <li><i class="bi bi-twitter "></i></li>
+                        <li><i class="bi bi-linkedin "></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-links ">
+                    <h4 class="footer-h4">Our Newsletter</h4>
+                    <p class="lorem-footer">Enter email to subscribe our Newsletter</p>
+                    <form action="# " method="# ">
+                        <input type="email" name="email" id="email" class="form-control " placeholder="Email ">
+                        <input type="submit" name="sub" id="sub" value="Subscribe ">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-4 ">
+        <div class="hr "></div>
+        <div class="container ">
+            <div class="copyright-server "></div>
+            <p class="server">&copy; Copyright <strong>SLEC</strong> All Rights Reserved</p>
+            <p class="made">Made & Designed By <span class="under " id="link-web ">Technical Abm</span></p>
+        </div>
+    </div>
+    <!-- bootstrap5 javascript script include -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js "></script>
+    <!-- custom javascript include -->
+    <script src="github-web\git-app\git.js" type="text/javascript "></script>
+</body>
+
+</html>
